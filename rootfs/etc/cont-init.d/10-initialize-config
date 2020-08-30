@@ -3,5 +3,5 @@
 GPHOTOS_UPLOADER_CONFIG_FILE=/config/config.hjson
 
 if [ ! -f "${GPHOTOS_UPLOADER_CONFIG_FILE}" ]; then
-    gphotos-uploader-cli init
+    gphotos-uploader-cli --config /config init
 fi

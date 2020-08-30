@@ -20,9 +20,9 @@ RUN \
         --branch v${GPHOTOS_UPLOADER_CLI_VERSION} \
         --single-branch && \
     cd /go/gphotos-uploader-cli && \
-    git apply /tmp/patches/gphotos-uploader-cli/*.patch \
-        --ignore-whitespace \
-        --verbose && \
+    # git apply /tmp/patches/gphotos-uploader-cli/*.patch \
+    #     --ignore-whitespace \
+    #     --verbose && \
     make build VERSION="${GPHOTOS_UPLOADER_CLI_VERSION}-docker" && \
     apk del build-dependencies
 
