@@ -1,3 +1,3 @@
-#!/bin/sh
+#!/usr/bin/with-contenv sh
 
-gphotos-uploader-cli --config /config push
+expect /etc/expect/push-with-passphrase

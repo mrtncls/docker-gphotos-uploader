@@ -1,3 +1,8 @@
+> ## Changes applied to this branch:
+> - Updated gphotos-uploader-cli to v1.0.8 (fixes auth token issue on my headless server)
+> - Removed patches and use *--config* param instead
+> - Use *expect* to supply passphare for local file tokenstore (only interactive mode available on v1.0.8 which blocks background processing)
+
 # rfgamaral/gphotos-uploader
 
 ![ci workflow](https://github.com/rfgamaral/docker-gphotos-uploader/workflows/Docker%20Images%20CI/badge.svg)

@@ -1,0 +1,8 @@
+#!/usr/local/bin/expect -f
+
+spawn gphotos-uploader-cli --config /config push
+
+expect "Enter the passphrase to open the token store: "
+send "$env(CLI_PASSPHRASE)\r"
+
+expect eof
